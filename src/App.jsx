@@ -9,6 +9,7 @@ import Login from "./pages/login"; // import your login page
 import Signup from "./pages/signup";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
+import Details from "./pages/Details";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/about" element={<About />} />
+            <Route path="/details/:id" element={<Details/>} />
           </Routes>
         </Router>
       }
